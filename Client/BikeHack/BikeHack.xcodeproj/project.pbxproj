@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C49C6F451BEF4B2E00D3AB96 /* GPSServices.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F441BEF4B2E00D3AB96 /* GPSServices.m */; };
+		C49C6F481BEF640700D3AB96 /* RoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F471BEF640700D3AB96 /* RoutViewController.m */; };
+		C49C6F4D1BEF7BCB00D3AB96 /* LoadingViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F4C1BEF7BCB00D3AB96 /* LoadingViewManager.m */; };
+		C49C6F541BEF82BD00D3AB96 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F4E1BEF82BD00D3AB96 /* 01.png */; };
+		C49C6F551BEF82BD00D3AB96 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F4F1BEF82BD00D3AB96 /* 02.png */; };
+		C49C6F561BEF82BD00D3AB96 /* App-Icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F501BEF82BD00D3AB96 /* App-Icon_120.png */; };
+		C49C6F571BEF82BD00D3AB96 /* App-Icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F511BEF82BD00D3AB96 /* App-Icon_180.png */; };
+		C49C6F581BEF82BD00D3AB96 /* Bike Icon Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F521BEF82BD00D3AB96 /* Bike Icon Small.png */; };
+		C49C6F591BEF82BD00D3AB96 /* Info Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F531BEF82BD00D3AB96 /* Info Icon.png */; };
+		C49C6F5B1BEF88BA00D3AB96 /* 01_Splash@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49C6F5A1BEF88BA00D3AB96 /* 01_Splash@2x.jpg */; };
+		C49D37E01BEEEEDE00EEF55B /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D37DF1BEEEEDE00EEF55B /* hamburger.png */; };
+		C49D37E31BEEEF4400EEF55B /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D37E21BEEEF4400EEF55B /* WelcomeViewController.m */; };
+		C49D37E61BEEF0D200EEF55B /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D37E51BEEF0D200EEF55B /* Tools.m */; };
+		C4C4C2411BEE739E00D4B00A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2401BEE739E00D4B00A /* main.m */; };
+		C4C4C2441BEE739E00D4B00A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2431BEE739E00D4B00A /* AppDelegate.m */; };
+		C4C4C24A1BEE739E00D4B00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C2481BEE739E00D4B00A /* Main.storyboard */; };
+		C4C4C24C1BEE739E00D4B00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C24B1BEE739E00D4B00A /* Assets.xcassets */; };
+		C4C4C24F1BEE739E00D4B00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C24D1BEE739E00D4B00A /* LaunchScreen.storyboard */; };
+		C4C4C25A1BEE739E00D4B00A /* BikeHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2591BEE739E00D4B00A /* BikeHackTests.m */; };
+		C4C4C2651BEE739E00D4B00A /* BikeHackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2641BEE739E00D4B00A /* BikeHackUITests.m */; };
+		C4C4C2751BEE7D8300D4B00A /* PointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2741BEE7D8300D4B00A /* PointModel.m */; };
+		C4C4C2781BEE7D9A00D4B00A /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C4C2771BEE7D9A00D4B00A /* Model.m */; };
+		C4C4C2811BEE875B00D4B00A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C4C2801BEE875B00D4B00A /* MapKit.framework */; };
+		C4C4C2A11BEEE99500D4B00A /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29A1BEEE99500D4B00A /* Avatar.png */; };
+		C4C4C2A21BEEE99500D4B00A /* City BG.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29B1BEEE99500D4B00A /* City BG.png */; };
+		C4C4C2A31BEEE99500D4B00A /* lupa.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29C1BEEE99500D4B00A /* lupa.png */; };
+		C4C4C2A41BEEE99500D4B00A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29D1BEEE99500D4B00A /* Montserrat-Regular.ttf */; };
+		C4C4C2A51BEEE99500D4B00A /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29E1BEEE99500D4B00A /* OpenSans-Italic.ttf */; };
+		C4C4C2A61BEEE99500D4B00A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29F1BEEE99500D4B00A /* OpenSans-Regular.ttf */; };
+		C4C4C2A71BEEE99500D4B00A /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C2A01BEEE99500D4B00A /* pin.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C4C2561BEE739E00D4B00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C4C2341BEE739E00D4B00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C4C23B1BEE739E00D4B00A;
+			remoteInfo = BikeHack;
+		};
+		C4C4C2611BEE739E00D4B00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C4C2341BEE739E00D4B00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C4C23B1BEE739E00D4B00A;
+			remoteInfo = BikeHack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C49C6F431BEF4B2E00D3AB96 /* GPSServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSServices.h; path = Model/GPSServices.h; sourceTree = "<group>"; };
+		C49C6F441BEF4B2E00D3AB96 /* GPSServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSServices.m; path = Model/GPSServices.m; sourceTree = "<group>"; };
+		C49C6F461BEF640700D3AB96 /* RoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutViewController.h; path = Controller/RoutViewController.h; sourceTree = "<group>"; };
+		C49C6F471BEF640700D3AB96 /* RoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutViewController.m; path = Controller/RoutViewController.m; sourceTree = "<group>"; };
+		C49C6F4B1BEF7BCB00D3AB96 /* LoadingViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewManager.h; sourceTree = "<group>"; };
+		C49C6F4C1BEF7BCB00D3AB96 /* LoadingViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewManager.m; sourceTree = "<group>"; };
+		C49C6F4E1BEF82BD00D3AB96 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		C49C6F4F1BEF82BD00D3AB96 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		C49C6F501BEF82BD00D3AB96 /* App-Icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon_120.png"; sourceTree = "<group>"; };
+		C49C6F511BEF82BD00D3AB96 /* App-Icon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon_180.png"; sourceTree = "<group>"; };
+		C49C6F521BEF82BD00D3AB96 /* Bike Icon Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bike Icon Small.png"; sourceTree = "<group>"; };
+		C49C6F531BEF82BD00D3AB96 /* Info Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info Icon.png"; sourceTree = "<group>"; };
+		C49C6F5A1BEF88BA00D3AB96 /* 01_Splash@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "01_Splash@2x.jpg"; sourceTree = "<group>"; };
+		C49D37DF1BEEEEDE00EEF55B /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
+		C49D37E11BEEEF4400EEF55B /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = Controller/WelcomeViewController.h; sourceTree = "<group>"; };
+		C49D37E21BEEEF4400EEF55B /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Controller/WelcomeViewController.m; sourceTree = "<group>"; };
+		C49D37E41BEEF0D200EEF55B /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = Model/Tools.h; sourceTree = "<group>"; };
+		C49D37E51BEEF0D200EEF55B /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tools.m; path = Model/Tools.m; sourceTree = "<group>"; };
+		C4C4C23C1BEE739E00D4B00A /* BikeHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C4C2401BEE739E00D4B00A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4C4C2421BEE739E00D4B00A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4C4C2431BEE739E00D4B00A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4C4C2491BEE739E00D4B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4C4C24B1BEE739E00D4B00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C4C24E1BEE739E00D4B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4C4C2501BEE739E00D4B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C4C2551BEE739E00D4B00A /* BikeHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C4C2591BEE739E00D4B00A /* BikeHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeHackTests.m; sourceTree = "<group>"; };
+		C4C4C25B1BEE739E00D4B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C4C2601BEE739E00D4B00A /* BikeHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C4C2641BEE739E00D4B00A /* BikeHackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeHackUITests.m; sourceTree = "<group>"; };
+		C4C4C2661BEE739E00D4B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C4C2731BEE7D8300D4B00A /* PointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointModel.h; path = Model/PointModel.h; sourceTree = "<group>"; };
+		C4C4C2741BEE7D8300D4B00A /* PointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointModel.m; path = Model/PointModel.m; sourceTree = "<group>"; };
+		C4C4C2761BEE7D9A00D4B00A /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Model/Model.h; sourceTree = "<group>"; };
+		C4C4C2771BEE7D9A00D4B00A /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Model/Model.m; sourceTree = "<group>"; };
+		C4C4C2801BEE875B00D4B00A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C4C4C29A1BEEE99500D4B00A /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		C4C4C29B1BEEE99500D4B00A /* City BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "City BG.png"; sourceTree = "<group>"; };
+		C4C4C29C1BEEE99500D4B00A /* lupa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lupa.png; sourceTree = "<group>"; };
+		C4C4C29D1BEEE99500D4B00A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		C4C4C29E1BEEE99500D4B00A /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		C4C4C29F1BEEE99500D4B00A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		C4C4C2A01BEEE99500D4B00A /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C4C2391BEE739E00D4B00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C4C2811BEE875B00D4B00A /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C2521BEE739E00D4B00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C25D1BEE739E00D4B00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C49C6F4A1BEF7BCB00D3AB96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C49C6F4B1BEF7BCB00D3AB96 /* LoadingViewManager.h */,
+				C49C6F4C1BEF7BCB00D3AB96 /* LoadingViewManager.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4C4C2331BEE739E00D4B00A = {
+			isa = PBXGroup;
+			children = (
+				C4C4C2801BEE875B00D4B00A /* MapKit.framework */,
+				C4C4C23E1BEE739E00D4B00A /* BikeHack */,
+				C4C4C2581BEE739E00D4B00A /* BikeHackTests */,
+				C4C4C2631BEE739E00D4B00A /* BikeHackUITests */,
+				C4C4C23D1BEE739E00D4B00A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C4C23D1BEE739E00D4B00A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C4C23C1BEE739E00D4B00A /* BikeHack.app */,
+				C4C4C2551BEE739E00D4B00A /* BikeHackTests.xctest */,
+				C4C4C2601BEE739E00D4B00A /* BikeHackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C4C23E1BEE739E00D4B00A /* BikeHack */ = {
+			isa = PBXGroup;
+			children = (
+				C49C6F4A1BEF7BCB00D3AB96 /* View */,
+				C4C4C2991BEEE93F00D4B00A /* Resources */,
+				C4C4C2791BEE7DB200D4B00A /* Controllers */,
+				C4C4C2721BEE7D3600D4B00A /* Model */,
+				C4C4C2421BEE739E00D4B00A /* AppDelegate.h */,
+				C4C4C2431BEE739E00D4B00A /* AppDelegate.m */,
+				C4C4C2481BEE739E00D4B00A /* Main.storyboard */,
+				C4C4C24B1BEE739E00D4B00A /* Assets.xcassets */,
+				C4C4C24D1BEE739E00D4B00A /* LaunchScreen.storyboard */,
+				C4C4C2501BEE739E00D4B00A /* Info.plist */,
+				C4C4C23F1BEE739E00D4B00A /* Supporting Files */,
+			);
+			path = BikeHack;
+			sourceTree = "<group>";
+		};
+		C4C4C23F1BEE739E00D4B00A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4C4C2401BEE739E00D4B00A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4C4C2581BEE739E00D4B00A /* BikeHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C4C2591BEE739E00D4B00A /* BikeHackTests.m */,
+				C4C4C25B1BEE739E00D4B00A /* Info.plist */,
+			);
+			path = BikeHackTests;
+			sourceTree = "<group>";
+		};
+		C4C4C2631BEE739E00D4B00A /* BikeHackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C4C2641BEE739E00D4B00A /* BikeHackUITests.m */,
+				C4C4C2661BEE739E00D4B00A /* Info.plist */,
+			);
+			path = BikeHackUITests;
+			sourceTree = "<group>";
+		};
+		C4C4C2721BEE7D3600D4B00A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4C4C2731BEE7D8300D4B00A /* PointModel.h */,
+				C4C4C2741BEE7D8300D4B00A /* PointModel.m */,
+				C4C4C2761BEE7D9A00D4B00A /* Model.h */,
+				C4C4C2771BEE7D9A00D4B00A /* Model.m */,
+				C49D37E41BEEF0D200EEF55B /* Tools.h */,
+				C49D37E51BEEF0D200EEF55B /* Tools.m */,
+				C49C6F431BEF4B2E00D3AB96 /* GPSServices.h */,
+				C49C6F441BEF4B2E00D3AB96 /* GPSServices.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C4C4C2791BEE7DB200D4B00A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C49D37E11BEEEF4400EEF55B /* WelcomeViewController.h */,
+				C49D37E21BEEEF4400EEF55B /* WelcomeViewController.m */,
+				C49C6F461BEF640700D3AB96 /* RoutViewController.h */,
+				C49C6F471BEF640700D3AB96 /* RoutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C4C4C2991BEEE93F00D4B00A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C49C6F5A1BEF88BA00D3AB96 /* 01_Splash@2x.jpg */,
+				C49C6F4E1BEF82BD00D3AB96 /* 01.png */,
+				C49C6F4F1BEF82BD00D3AB96 /* 02.png */,
+				C49C6F501BEF82BD00D3AB96 /* App-Icon_120.png */,
+				C49C6F511BEF82BD00D3AB96 /* App-Icon_180.png */,
+				C49C6F521BEF82BD00D3AB96 /* Bike Icon Small.png */,
+				C49C6F531BEF82BD00D3AB96 /* Info Icon.png */,
+				C49D37DF1BEEEEDE00EEF55B /* hamburger.png */,
+				C4C4C29A1BEEE99500D4B00A /* Avatar.png */,
+				C4C4C29B1BEEE99500D4B00A /* City BG.png */,
+				C4C4C29C1BEEE99500D4B00A /* lupa.png */,
+				C4C4C29D1BEEE99500D4B00A /* Montserrat-Regular.ttf */,
+				C4C4C29E1BEEE99500D4B00A /* OpenSans-Italic.ttf */,
+				C4C4C29F1BEEE99500D4B00A /* OpenSans-Regular.ttf */,
+				C4C4C2A01BEEE99500D4B00A /* pin.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4C4C23B1BEE739E00D4B00A /* BikeHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C4C2691BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHack" */;
+			buildPhases = (
+				C4C4C2381BEE739E00D4B00A /* Sources */,
+				C4C4C2391BEE739E00D4B00A /* Frameworks */,
+				C4C4C23A1BEE739E00D4B00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikeHack;
+			productName = BikeHack;
+			productReference = C4C4C23C1BEE739E00D4B00A /* BikeHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4C4C2541BEE739E00D4B00A /* BikeHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C4C26C1BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHackTests" */;
+			buildPhases = (
+				C4C4C2511BEE739E00D4B00A /* Sources */,
+				C4C4C2521BEE739E00D4B00A /* Frameworks */,
+				C4C4C2531BEE739E00D4B00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C4C2571BEE739E00D4B00A /* PBXTargetDependency */,
+			);
+			name = BikeHackTests;
+			productName = BikeHackTests;
+			productReference = C4C4C2551BEE739E00D4B00A /* BikeHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4C4C25F1BEE739E00D4B00A /* BikeHackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C4C26F1BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHackUITests" */;
+			buildPhases = (
+				C4C4C25C1BEE739E00D4B00A /* Sources */,
+				C4C4C25D1BEE739E00D4B00A /* Frameworks */,
+				C4C4C25E1BEE739E00D4B00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C4C2621BEE739E00D4B00A /* PBXTargetDependency */,
+			);
+			name = BikeHackUITests;
+			productName = BikeHackUITests;
+			productReference = C4C4C2601BEE739E00D4B00A /* BikeHackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4C4C2341BEE739E00D4B00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "The Planeteers";
+				TargetAttributes = {
+					C4C4C23B1BEE739E00D4B00A = {
+						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					C4C4C2541BEE739E00D4B00A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = C4C4C23B1BEE739E00D4B00A;
+					};
+					C4C4C25F1BEE739E00D4B00A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = C4C4C23B1BEE739E00D4B00A;
+					};
+				};
+			};
+			buildConfigurationList = C4C4C2371BEE739E00D4B00A /* Build configuration list for PBXProject "BikeHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4C4C2331BEE739E00D4B00A;
+			productRefGroup = C4C4C23D1BEE739E00D4B00A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4C4C23B1BEE739E00D4B00A /* BikeHack */,
+				C4C4C2541BEE739E00D4B00A /* BikeHackTests */,
+				C4C4C25F1BEE739E00D4B00A /* BikeHackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4C4C23A1BEE739E00D4B00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49C6F551BEF82BD00D3AB96 /* 02.png in Resources */,
+				C4C4C2A11BEEE99500D4B00A /* Avatar.png in Resources */,
+				C4C4C2A51BEEE99500D4B00A /* OpenSans-Italic.ttf in Resources */,
+				C49C6F581BEF82BD00D3AB96 /* Bike Icon Small.png in Resources */,
+				C49C6F5B1BEF88BA00D3AB96 /* 01_Splash@2x.jpg in Resources */,
+				C49C6F591BEF82BD00D3AB96 /* Info Icon.png in Resources */,
+				C4C4C24F1BEE739E00D4B00A /* LaunchScreen.storyboard in Resources */,
+				C49C6F571BEF82BD00D3AB96 /* App-Icon_180.png in Resources */,
+				C4C4C2A71BEEE99500D4B00A /* pin.png in Resources */,
+				C49D37E01BEEEEDE00EEF55B /* hamburger.png in Resources */,
+				C49C6F561BEF82BD00D3AB96 /* App-Icon_120.png in Resources */,
+				C4C4C2A41BEEE99500D4B00A /* Montserrat-Regular.ttf in Resources */,
+				C49C6F541BEF82BD00D3AB96 /* 01.png in Resources */,
+				C4C4C2A21BEEE99500D4B00A /* City BG.png in Resources */,
+				C4C4C24C1BEE739E00D4B00A /* Assets.xcassets in Resources */,
+				C4C4C24A1BEE739E00D4B00A /* Main.storyboard in Resources */,
+				C4C4C2A61BEEE99500D4B00A /* OpenSans-Regular.ttf in Resources */,
+				C4C4C2A31BEEE99500D4B00A /* lupa.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C2531BEE739E00D4B00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C25E1BEE739E00D4B00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4C4C2381BEE739E00D4B00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C4C2441BEE739E00D4B00A /* AppDelegate.m in Sources */,
+				C49C6F4D1BEF7BCB00D3AB96 /* LoadingViewManager.m in Sources */,
+				C49D37E61BEEF0D200EEF55B /* Tools.m in Sources */,
+				C4C4C2751BEE7D8300D4B00A /* PointModel.m in Sources */,
+				C49C6F481BEF640700D3AB96 /* RoutViewController.m in Sources */,
+				C49C6F451BEF4B2E00D3AB96 /* GPSServices.m in Sources */,
+				C49D37E31BEEEF4400EEF55B /* WelcomeViewController.m in Sources */,
+				C4C4C2411BEE739E00D4B00A /* main.m in Sources */,
+				C4C4C2781BEE7D9A00D4B00A /* Model.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C2511BEE739E00D4B00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C4C25A1BEE739E00D4B00A /* BikeHackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C4C25C1BEE739E00D4B00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C4C2651BEE739E00D4B00A /* BikeHackUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C4C2571BEE739E00D4B00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C4C23B1BEE739E00D4B00A /* BikeHack */;
+			targetProxy = C4C4C2561BEE739E00D4B00A /* PBXContainerItemProxy */;
+		};
+		C4C4C2621BEE739E00D4B00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C4C23B1BEE739E00D4B00A /* BikeHack */;
+			targetProxy = C4C4C2611BEE739E00D4B00A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4C4C2481BEE739E00D4B00A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C4C2491BEE739E00D4B00A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C4C24D1BEE739E00D4B00A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C4C24E1BEE739E00D4B00A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4C4C2671BEE739E00D4B00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4C4C2681BEE739E00D4B00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4C4C26A1BEE739E00D4B00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BikeHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4C4C26B1BEE739E00D4B00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BikeHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C4C4C26D1BEE739E00D4B00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BikeHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeHack.app/BikeHack";
+			};
+			name = Debug;
+		};
+		C4C4C26E1BEE739E00D4B00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BikeHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeHack.app/BikeHack";
+			};
+			name = Release;
+		};
+		C4C4C2701BEE739E00D4B00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BikeHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BikeHack;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C4C4C2711BEE739E00D4B00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BikeHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.planeteers.BikeHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BikeHack;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4C4C2371BEE739E00D4B00A /* Build configuration list for PBXProject "BikeHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C4C2671BEE739E00D4B00A /* Debug */,
+				C4C4C2681BEE739E00D4B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C4C2691BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C4C26A1BEE739E00D4B00A /* Debug */,
+				C4C4C26B1BEE739E00D4B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C4C26C1BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C4C26D1BEE739E00D4B00A /* Debug */,
+				C4C4C26E1BEE739E00D4B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C4C26F1BEE739E00D4B00A /* Build configuration list for PBXNativeTarget "BikeHackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C4C2701BEE739E00D4B00A /* Debug */,
+				C4C4C2711BEE739E00D4B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4C4C2341BEE739E00D4B00A /* Project object */;
+}
