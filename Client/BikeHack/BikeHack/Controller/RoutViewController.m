@@ -155,36 +155,22 @@
         
         // start recording
         [[GPSServices sharedManager] startStopTracking];
-        [[GPSServices sharedManager] setMapView:self.mapView];
-        
-        // start timer
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(reserUserMarker) userInfo:nil repeats:YES];
         
         // center map on my location and disable editing
         self.mapView.scrollEnabled = NO;
         self.mapView.zoomEnabled = NO;
  
+        [self.mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
+        
     } else {
         // stop recording
         [[GPSServices sharedManager] startStopTracking];
-        [self.timer invalidate];
         
-        //GO TO THE NEW PAGE
+        //TODO: GO TO THE NEW PAGE
     }
     
 }
-- (void)reserUserMarker {
-    if ([[GPSServices sharedManager] locationManager].location != nil) {
-        
-        MKCoordinateRegion region;
-        region.span.latitudeDelta = 0.005f ;
-        region.span.longitudeDelta = 0.005f ;
-        
-        region.center.latitude = [[GPSServices sharedManager] locationManager].location.coordinate.latitude;
-        region.center.longitude = [[GPSServices sharedManager] locationManager].location.coordinate.longitude ;
-        [self.mapView setRegion:region animated:YES];
-    }
-}
+
 - (IBAction)safeRoutButtonPressed:(id)sender {
 }
 

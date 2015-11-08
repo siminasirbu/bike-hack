@@ -27,7 +27,4 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bikeImage;
 @property (weak, nonatomic) IBOutlet UIButton *bikeButton;
 
-@property int seconds;
-@property (nonatomic, strong) NSTimer *timer;
-
 @end

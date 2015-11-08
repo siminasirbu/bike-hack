@@ -15,9 +15,10 @@
 @property (strong, nonatomic) MKRoute *appleRoute;
 @property (strong, nonatomic) CLPlacemark *localPlaceMark;
 @property (strong, nonatomic) CLPlacemark *addressPlaceMark;
-@property (weak, nonatomic) MKMapView *mapView;
 
 @property float distance;
+@property int seconds;
+@property (nonatomic, strong) NSTimer *timer;
 
 + (id)sharedManager;
 

@@ -60,17 +60,29 @@ CLLocation *lastLocation;
     self.locationManager = nil;
 }
 
+// MARK: - Tracking
 -(void) startStopTracking; {
     
     if (recording) {
         recording = NO;
+        [self.timer invalidate];
     } else {
         self.distance = 0;
+        self.seconds = 0;
         recording = YES;
+        // start timer
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(secondPassed) userInfo:nil repeats:YES];
     }
 
 }
 
+- (void)secondPassed {
+    self.seconds++;
+    
+    NSLog(@" - seconds:%d distance:%f",self.seconds,self.distance);
+}
+
+// MARK: - Finding
 -(void) findeRouteToAddress:(NSString *)address withCompleteHandler:(void (^)(BOOL state))completionHandler{
 
     // find a given place
@@ -213,24 +225,7 @@ CLLocation *lastLocation;
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager
-       didUpdateHeading:(CLHeading *)newHeading
-{
-    double rotation = newHeading.magneticHeading * 3.14159 / 180;
-    CGPoint anchorPoint = CGPointMake(0, -23); // The anchor point for your pin
-    
-    [self.mapView setTransform:CGAffineTransformMakeRotation(-rotation)];
-    
-    [[self.mapView annotations] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        MKAnnotationView * view = [self.mapView viewForAnnotation:obj];
-        
-        [view setTransform:CGAffineTransformMakeRotation(rotation)];
-        [view setCenterOffset:CGPointApplyAffineTransform(anchorPoint, CGAffineTransformMakeRotation(rotation))];
-        
-    }];
-    
-}
-
+// MARK: - Utility
 + (MKPolyline *)polylineWithEncodedString:(NSString *)encodedString {
     const char *bytes = [encodedString UTF8String];
     NSUInteger length = [encodedString lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
