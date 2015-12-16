@@ -61,12 +61,15 @@
         if (state) {
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
             RoutViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"routViewCtrl"];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:vc animated:YES completion:^{
+                [LoadingViewManager hideLoadingView];
+            }];
             
             NSLog(@" you go girl");
+        } else {
+            [LoadingViewManager hideLoadingViewAnimated];
         }
         
-        [LoadingViewManager hideLoadingView];
     }];
 }
 

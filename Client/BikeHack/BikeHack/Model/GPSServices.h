@@ -25,4 +25,6 @@
 -(void) findeRouteToAddress:(NSString *)address withCompleteHandler:(void (^)(BOOL state))completionHandler;
 -(void) startStopTracking;
 
++(MKPolyline *)polylineWithEncodedString:(NSString *)encodedString;
+
 @end

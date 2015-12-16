@@ -13,5 +13,6 @@
 
 +(void)showLoadingViewInParentView:(UIView *)parentView;
 +(void)hideLoadingView;
++(void)hideLoadingViewAnimated;
 
 @end

@@ -130,7 +130,7 @@
             [self drawOverlayOnMap];
         }
         
-        [LoadingViewManager hideLoadingView];
+        [LoadingViewManager hideLoadingViewAnimated];
     }];
 }
 

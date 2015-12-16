@@ -12,12 +12,13 @@
 @implementation LoadingViewManager
 
 static UIView *rootView;
-static UIActivityIndicatorView *activityIndicator;
 static UIView *backgroundView;
+static UIImageView* animatedImageView;
+static BOOL isAnimateing;
 
 +(void)showLoadingViewInParentView:(UIView *)parentView
 {
-    UIImageView* animatedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 70, 71)];
+    animatedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 70, 71)];
     
     animatedImageView.animationImages = [NSArray arrayWithObjects:
                                          [UIImage imageNamed:@"01.png"],
@@ -26,26 +27,54 @@ static UIView *backgroundView;
     animatedImageView.animationRepeatCount = 0;
     animatedImageView.center = CGPointMake(parentView.bounds.size.width / 2, parentView.bounds.size.height / 2);
     [animatedImageView startAnimating];
-
-    [backgroundView removeFromSuperview];
     
-    backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, parentView.bounds.size.width, parentView.bounds.size.height)];
+    backgroundView = [[UIView alloc] initWithFrame:CGRectMake((parentView.bounds.size.width - 100 )/ 2, (parentView.bounds.size.height - 100 )/ 2, 100, 100)];
     backgroundView.backgroundColor = [Tools colorFromHexString:@"#474747"];
     backgroundView.alpha = 0.7;
+    backgroundView.layer.cornerRadius = backgroundView.frame.size.width / 2;
     
-    [backgroundView addSubview:animatedImageView];
+    isAnimateing = YES;
     
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        // Animate it to 4 the size
+        const CGFloat scale = 10;
+        [backgroundView setTransform:CGAffineTransformMakeScale(scale, scale)];
+    } completion:^(BOOL finished) {
+        isAnimateing = NO;
+    }];
     
     rootView = parentView;
     rootView.userInteractionEnabled = NO;
     [rootView addSubview:backgroundView];
+    [rootView addSubview:animatedImageView];
 }
 
-+(void)hideLoadingView
-{
-    [activityIndicator stopAnimating];
-    [backgroundView removeFromSuperview];
++(void)hideLoadingViewAnimated {
+    
+    if (isAnimateing == YES) {
+        [self hideLoadingView];
+    } else {
+        [UIView animateWithDuration:0.5 animations:^{
+            
+            // Animate it to -4 the size
+            const CGFloat scale = 0.3;
+            [backgroundView setTransform:CGAffineTransformMakeScale(scale, scale)];
+        } completion:^(BOOL finished) {
+            [self hideLoadingView];
+        }];
+    }
+    
+}
+
++(void)hideLoadingView {
+    [animatedImageView stopAnimating];
     rootView.userInteractionEnabled = YES;
+    [backgroundView removeFromSuperview];
+    backgroundView = nil;
+    [animatedImageView removeFromSuperview];
+    animatedImageView = nil;
+    rootView = nil;
 }
 
 @end

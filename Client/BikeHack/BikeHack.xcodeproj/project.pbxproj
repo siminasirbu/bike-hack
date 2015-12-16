@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40CDF101BF1492D00FD81CD /* faceMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0A1BF1492D00FD81CD /* faceMenu.png */; };
+		C40CDF111BF1492D00FD81CD /* gooMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0B1BF1492D00FD81CD /* gooMenu.png */; };
+		C40CDF121BF1492D00FD81CD /* instMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0C1BF1492D00FD81CD /* instMenu.png */; };
+		C40CDF131BF1492D00FD81CD /* linkMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0D1BF1492D00FD81CD /* linkMenu.png */; };
+		C40CDF141BF1492D00FD81CD /* twitMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0E1BF1492D00FD81CD /* twitMenu.png */; };
+		C40CDF151BF1492D00FD81CD /* youMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C40CDF0F1BF1492D00FD81CD /* youMenu.png */; };
+		C4769B311BF33B9B007FB7E8 /* close47.png in Resources */ = {isa = PBXBuildFile; fileRef = C4769B301BF33B9B007FB7E8 /* close47.png */; };
 		C49C6F451BEF4B2E00D3AB96 /* GPSServices.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F441BEF4B2E00D3AB96 /* GPSServices.m */; };
 		C49C6F481BEF640700D3AB96 /* RoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F471BEF640700D3AB96 /* RoutViewController.m */; };
 		C49C6F4D1BEF7BCB00D3AB96 /* LoadingViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C6F4C1BEF7BCB00D3AB96 /* LoadingViewManager.m */; };
@@ -37,6 +44,7 @@
 		C4C4C2A51BEEE99500D4B00A /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29E1BEEE99500D4B00A /* OpenSans-Italic.ttf */; };
 		C4C4C2A61BEEE99500D4B00A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C29F1BEEE99500D4B00A /* OpenSans-Regular.ttf */; };
 		C4C4C2A71BEEE99500D4B00A /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C2A01BEEE99500D4B00A /* pin.png */; };
+		C4C583D71BF13B2800DF7A3D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C583D61BF13B2800DF7A3D /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C40CDF0A1BF1492D00FD81CD /* faceMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceMenu.png; sourceTree = "<group>"; };
+		C40CDF0B1BF1492D00FD81CD /* gooMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gooMenu.png; sourceTree = "<group>"; };
+		C40CDF0C1BF1492D00FD81CD /* instMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instMenu.png; sourceTree = "<group>"; };
+		C40CDF0D1BF1492D00FD81CD /* linkMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkMenu.png; sourceTree = "<group>"; };
+		C40CDF0E1BF1492D00FD81CD /* twitMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitMenu.png; sourceTree = "<group>"; };
+		C40CDF0F1BF1492D00FD81CD /* youMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youMenu.png; sourceTree = "<group>"; };
+		C4769B301BF33B9B007FB7E8 /* close47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close47.png; sourceTree = "<group>"; };
 		C49C6F431BEF4B2E00D3AB96 /* GPSServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSServices.h; path = Model/GPSServices.h; sourceTree = "<group>"; };
 		C49C6F441BEF4B2E00D3AB96 /* GPSServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSServices.m; path = Model/GPSServices.m; sourceTree = "<group>"; };
 		C49C6F461BEF640700D3AB96 /* RoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutViewController.h; path = Controller/RoutViewController.h; sourceTree = "<group>"; };
@@ -101,6 +116,8 @@
 		C4C4C29E1BEEE99500D4B00A /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		C4C4C29F1BEEE99500D4B00A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		C4C4C2A01BEEE99500D4B00A /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		C4C583D51BF13B2800DF7A3D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controller/MainViewController.h; sourceTree = "<group>"; };
+		C4C583D61BF13B2800DF7A3D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controller/MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +146,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C40CDF091BF1492D00FD81CD /* toRemove */ = {
+			isa = PBXGroup;
+			children = (
+				C4769B301BF33B9B007FB7E8 /* close47.png */,
+				C40CDF0A1BF1492D00FD81CD /* faceMenu.png */,
+				C40CDF0B1BF1492D00FD81CD /* gooMenu.png */,
+				C40CDF0C1BF1492D00FD81CD /* instMenu.png */,
+				C40CDF0D1BF1492D00FD81CD /* linkMenu.png */,
+				C40CDF0E1BF1492D00FD81CD /* twitMenu.png */,
+				C40CDF0F1BF1492D00FD81CD /* youMenu.png */,
+			);
+			path = toRemove;
+			sourceTree = "<group>";
+		};
 		C49C6F4A1BEF7BCB00D3AB96 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +256,8 @@
 				C49D37E21BEEEF4400EEF55B /* WelcomeViewController.m */,
 				C49C6F461BEF640700D3AB96 /* RoutViewController.h */,
 				C49C6F471BEF640700D3AB96 /* RoutViewController.m */,
+				C4C583D51BF13B2800DF7A3D /* MainViewController.h */,
+				C4C583D61BF13B2800DF7A3D /* MainViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +265,7 @@
 		C4C4C2991BEEE93F00D4B00A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C40CDF091BF1492D00FD81CD /* toRemove */,
 				C49C6F5A1BEF88BA00D3AB96 /* 01_Splash@2x.jpg */,
 				C49C6F4E1BEF82BD00D3AB96 /* 01.png */,
 				C49C6F4F1BEF82BD00D3AB96 /* 02.png */,
@@ -359,10 +393,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40CDF151BF1492D00FD81CD /* youMenu.png in Resources */,
 				C49C6F551BEF82BD00D3AB96 /* 02.png in Resources */,
 				C4C4C2A11BEEE99500D4B00A /* Avatar.png in Resources */,
+				C40CDF121BF1492D00FD81CD /* instMenu.png in Resources */,
 				C4C4C2A51BEEE99500D4B00A /* OpenSans-Italic.ttf in Resources */,
+				C40CDF131BF1492D00FD81CD /* linkMenu.png in Resources */,
 				C49C6F581BEF82BD00D3AB96 /* Bike Icon Small.png in Resources */,
+				C40CDF111BF1492D00FD81CD /* gooMenu.png in Resources */,
+				C40CDF141BF1492D00FD81CD /* twitMenu.png in Resources */,
 				C49C6F5B1BEF88BA00D3AB96 /* 01_Splash@2x.jpg in Resources */,
 				C49C6F591BEF82BD00D3AB96 /* Info Icon.png in Resources */,
 				C4C4C24F1BEE739E00D4B00A /* LaunchScreen.storyboard in Resources */,
@@ -373,8 +412,10 @@
 				C4C4C2A41BEEE99500D4B00A /* Montserrat-Regular.ttf in Resources */,
 				C49C6F541BEF82BD00D3AB96 /* 01.png in Resources */,
 				C4C4C2A21BEEE99500D4B00A /* City BG.png in Resources */,
+				C40CDF101BF1492D00FD81CD /* faceMenu.png in Resources */,
 				C4C4C24C1BEE739E00D4B00A /* Assets.xcassets in Resources */,
 				C4C4C24A1BEE739E00D4B00A /* Main.storyboard in Resources */,
+				C4769B311BF33B9B007FB7E8 /* close47.png in Resources */,
 				C4C4C2A61BEEE99500D4B00A /* OpenSans-Regular.ttf in Resources */,
 				C4C4C2A31BEEE99500D4B00A /* lupa.png in Resources */,
 			);
@@ -404,6 +445,7 @@
 				C4C4C2441BEE739E00D4B00A /* AppDelegate.m in Sources */,
 				C49C6F4D1BEF7BCB00D3AB96 /* LoadingViewManager.m in Sources */,
 				C49D37E61BEEF0D200EEF55B /* Tools.m in Sources */,
+				C4C583D71BF13B2800DF7A3D /* MainViewController.m in Sources */,
 				C4C4C2751BEE7D8300D4B00A /* PointModel.m in Sources */,
 				C49C6F481BEF640700D3AB96 /* RoutViewController.m in Sources */,
 				C49C6F451BEF4B2E00D3AB96 /* GPSServices.m in Sources */,

@@ -128,8 +128,6 @@ CLLocation *lastLocation;
 
 -(void) findPlaceMarkForAddress:(NSString *)address completionHandler:(void (^)(CLPlacemark *placeMaker))completionHandler {
 
-    // findPlaceMarkForAddress:(NSString *)address completionHandler:
-    
     [geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
         NSLog(@"Finding given address");
         if (error) {
